@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Laravel Mail | Dev Notes</title>
+    <meta name="generator" content="VuePress 1.5.4">
+    
+    <meta name="description" content="">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="preload" href="/assets/css/0.styles.2dae5f2c.css" as="style"><link rel="preload" href="/assets/js/app.5fb13467.js" as="script"><link rel="preload" href="/assets/js/2.63cfec30.js" as="script"><link rel="preload" href="/assets/js/16.bb2c7866.js" as="script"><link rel="prefetch" href="/assets/js/10.00cb3bd6.js"><link rel="prefetch" href="/assets/js/11.c5a0dfa6.js"><link rel="prefetch" href="/assets/js/12.88564b26.js"><link rel="prefetch" href="/assets/js/13.94dcf474.js"><link rel="prefetch" href="/assets/js/14.9ae6017b.js"><link rel="prefetch" href="/assets/js/15.b3fe94d9.js"><link rel="prefetch" href="/assets/js/17.67e1745a.js"><link rel="prefetch" href="/assets/js/18.48cc3f5c.js"><link rel="prefetch" href="/assets/js/19.16c9ba6d.js"><link rel="prefetch" href="/assets/js/20.7c6ca6c1.js"><link rel="prefetch" href="/assets/js/21.6e6f16e3.js"><link rel="prefetch" href="/assets/js/22.d9609d44.js"><link rel="prefetch" href="/assets/js/23.171316fe.js"><link rel="prefetch" href="/assets/js/24.9eaa1815.js"><link rel="prefetch" href="/assets/js/25.fb4e4e0e.js"><link rel="prefetch" href="/assets/js/3.66918fa8.js"><link rel="prefetch" href="/assets/js/4.5ed19beb.js"><link rel="prefetch" href="/assets/js/5.d980e386.js"><link rel="prefetch" href="/assets/js/6.5456e083.js"><link rel="prefetch" href="/assets/js/7.e3020cf7.js"><link rel="prefetch" href="/assets/js/8.b11fe61b.js"><link rel="prefetch" href="/assets/js/9.733feea0.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.2dae5f2c.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Dev Notes</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/tutorials/" class="nav-link router-link-active">
+  Tutorials
+</a></div><div class="nav-item"><a href="/refrences/" class="nav-link">
+  Refrences
+</a></div><div class="nav-item"><a href="https://github.com/BayramBani/docs-starter" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/tutorials/" class="nav-link router-link-active">
+  Tutorials
+</a></div><div class="nav-item"><a href="/refrences/" class="nav-link">
+  Refrences
+</a></div><div class="nav-item"><a href="https://github.com/BayramBani/docs-starter" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>Tutorials</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/tutorials/" aria-current="page" class="sidebar-link">Dev Tutorials</a></li><li><a href="/tutorials/git.html" class="sidebar-link">Git</a></li><li><a href="/tutorials/webpack.html" class="sidebar-link">Webpack</a></li><li><a href="/tutorials/gulp.html" class="sidebar-link">Gulp</a></li><li><a href="/tutorials/ubuntu.html" class="sidebar-link">Ubuntu</a></li><li><a href="/tutorials/lxd.html" class="sidebar-link">LXD</a></li><li><a href="/tutorials/docker.html" class="sidebar-link">Docker</a></li><li><a href="/tutorials/lumen.html" class="sidebar-link">Lumen</a></li><li><a href="/tutorials/laravel_crud.html" class="sidebar-link">Laravel CRUD</a></li><li><a href="/tutorials/laravel_mail.html" aria-current="page" class="active sidebar-link">Laravel Mail</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/tutorials/laravel_mail.html#installation" class="sidebar-link">Installation</a></li><li class="sidebar-sub-header"><a href="/tutorials/laravel_mail.html#mail-configuration" class="sidebar-link">Mail configuration</a></li><li class="sidebar-sub-header"><a href="/tutorials/laravel_mail.html#generating-mailables" class="sidebar-link">Generating Mailables</a></li><li class="sidebar-sub-header"><a href="/tutorials/laravel_mail.html#create-controller" class="sidebar-link">Create controller</a></li><li class="sidebar-sub-header"><a href="/tutorials/laravel_mail.html#create-views" class="sidebar-link">Create views</a></li><li class="sidebar-sub-header"><a href="/tutorials/laravel_mail.html#create-routes" class="sidebar-link">Create routes</a></li><li class="sidebar-sub-header"><a href="/tutorials/laravel_mail.html#serve" class="sidebar-link">Serve</a></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="laravel-mail"><a href="#laravel-mail" class="header-anchor">#</a> Laravel Mail</h1> <hr> <h2 id="installation"><a href="#installation" class="header-anchor">#</a> Installation</h2> <blockquote><p>via composer</p></blockquote> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token function">composer</span> create-project laravel/laravel webapp
+</code></pre></div><blockquote><p>via Laravel installer</p></blockquote> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token function">composer</span> global require laravel/installer
+laravel new webapp
+</code></pre></div><h2 id="mail-configuration"><a href="#mail-configuration" class="header-anchor">#</a> Mail configuration</h2> <blockquote><p>/.env</p></blockquote> <div class="language-tex extra-class"><pre class="language-tex"><code>MAIL_MAILER=smtp
+MAIL_HOST=smtp.gmail.com
+MAIL_PORT=587
+MAIL_USERNAME=&lt;your-username@gmail.com&gt;
+MAIL_PASSWORD=&lt;your-password&gt;
+MAIL_ENCRYPTION=tls
+MAIL_FROM_ADDRESS=&lt;you@email.com&gt;
+MAIL_FROM_NAME=&quot;$<span class="token punctuation">{</span>APP_NAME<span class="token punctuation">}</span>&quot;
+</code></pre></div><h2 id="generating-mailables"><a href="#generating-mailables" class="header-anchor">#</a> Generating Mailables</h2> <div class="language-shell extra-class"><pre class="language-shell"><code>php artisan make:mail Message
+</code></pre></div><p>with markdown</p> <div class="language-shell extra-class"><pre class="language-shell"><code>php artisan make:mail Message --markdown<span class="token operator">=</span>emails.message
+</code></pre></div><blockquote><p>Maillable: /app/Mail/Message.php</p></blockquote> <div class="language-php extra-class"><pre class="language-php"><code><span class="token php language-php"><span class="token delimiter important">&lt;?php</span>
+
+<span class="token keyword">namespace</span> <span class="token package">App<span class="token punctuation">\</span>Mail</span><span class="token punctuation">;</span>
+
+<span class="token keyword">use</span> <span class="token package">Illuminate<span class="token punctuation">\</span>Bus<span class="token punctuation">\</span>Queueable</span><span class="token punctuation">;</span>
+<span class="token keyword">use</span> <span class="token package">Illuminate<span class="token punctuation">\</span>Contracts<span class="token punctuation">\</span>Queue<span class="token punctuation">\</span>ShouldQueue</span><span class="token punctuation">;</span>
+<span class="token keyword">use</span> <span class="token package">Illuminate<span class="token punctuation">\</span>Mail<span class="token punctuation">\</span>Mailable</span><span class="token punctuation">;</span>
+<span class="token keyword">use</span> <span class="token package">Illuminate<span class="token punctuation">\</span>Queue<span class="token punctuation">\</span>SerializesModels</span><span class="token punctuation">;</span>
+
+<span class="token keyword">class</span> <span class="token class-name">Message</span> <span class="token keyword">extends</span> <span class="token class-name">Mailable</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">use</span> <span class="token package">Queueable</span><span class="token punctuation">,</span> SerializesModels<span class="token punctuation">;</span>
+
+    <span class="token keyword">public</span> <span class="token variable">$mailData</span><span class="token punctuation">;</span>
+
+    <span class="token comment">/**
+     * Create a new message instance.
+     *
+     * @return void
+     */</span>
+    <span class="token keyword">public</span> <span class="token keyword">function</span> <span class="token function">__construct</span><span class="token punctuation">(</span><span class="token variable">$mailData</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token variable">$this</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token property">mailData</span> <span class="token operator">=</span> <span class="token variable">$mailData</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment">/**
+     * Build the message.
+     *
+     * @return $this
+     */</span>
+    <span class="token keyword">public</span> <span class="token keyword">function</span> <span class="token function">build</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token comment">//return $this-&gt;markdown('emails.message');</span>
+      <span class="token keyword">return</span> <span class="token variable">$this</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">from</span><span class="token punctuation">(</span><span class="token single-quoted-string string">'sender@email.com'</span><span class="token punctuation">,</span><span class="token single-quoted-string string">'Sender Name'</span><span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">replyTo</span><span class="token punctuation">(</span><span class="token single-quoted-string string">'sender@email.com'</span><span class="token punctuation">)</span>
+        <span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">subject</span><span class="token punctuation">(</span><span class="token single-quoted-string string">'Contact Message'</span><span class="token punctuation">)</span>
+        <span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">view</span><span class="token punctuation">(</span><span class="token single-quoted-string string">'emails.message'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</span></code></pre></div><h2 id="create-controller"><a href="#create-controller" class="header-anchor">#</a> Create controller</h2> <div class="language-shell extra-class"><pre class="language-shell"><code>php artisan make:controller MessageController --resource --model<span class="token operator">=</span>Message
+</code></pre></div><blockquote><p>Controller :  /app/Http/Controllers/ContactController.php</p></blockquote> <div class="language-php extra-class"><pre class="language-php"><code><span class="token php language-php"><span class="token delimiter important">&lt;?php</span>
+
+<span class="token keyword">namespace</span> <span class="token package">App<span class="token punctuation">\</span>Http<span class="token punctuation">\</span>Controllers</span><span class="token punctuation">;</span>
+
+<span class="token keyword">use</span> <span class="token package">App<span class="token punctuation">\</span>Models<span class="token punctuation">\</span>Message</span><span class="token punctuation">;</span>
+<span class="token keyword">use</span> <span class="token package">Illuminate<span class="token punctuation">\</span>Http<span class="token punctuation">\</span>Request</span><span class="token punctuation">;</span>
+<span class="token keyword">use</span> <span class="token package">Illuminate<span class="token punctuation">\</span>Support<span class="token punctuation">\</span>Facades<span class="token punctuation">\</span>Mail</span><span class="token punctuation">;</span>
+
+<span class="token keyword">class</span> <span class="token class-name">MessageController</span> <span class="token keyword">extends</span> <span class="token class-name">Controller</span>
+<span class="token punctuation">{</span>
+  <span class="token comment">/**
+   * Display a listing of the resource.
+   *
+   * @return \Illuminate\Http\Response
+   */</span>
+  <span class="token keyword">public</span> <span class="token keyword">function</span> <span class="token function">index</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token function">view</span><span class="token punctuation">(</span><span class="token single-quoted-string string">'forms.contact'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token comment">/**
+   * Show the form for creating a new resource.
+   *
+   * @return \Illuminate\Http\Response
+   */</span>
+  <span class="token keyword">public</span> <span class="token keyword">function</span> <span class="token function">create</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">{</span>
+    <span class="token comment">//</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token comment">/**
+   * Store a newly created resource in storage.
+   *
+   * @param  \Illuminate\Http\Request $request
+   * @return \Illuminate\Http\Response
+   */</span>
+  <span class="token keyword">public</span> <span class="token keyword">function</span> <span class="token function">store</span><span class="token punctuation">(</span>Request <span class="token variable">$request</span><span class="token punctuation">)</span>
+  <span class="token punctuation">{</span>
+    <span class="token variable">$request</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">validate</span><span class="token punctuation">(</span><span class="token punctuation">[</span>
+      <span class="token single-quoted-string string">'name'</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token single-quoted-string string">'required'</span><span class="token punctuation">,</span>
+      <span class="token single-quoted-string string">'email'</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token single-quoted-string string">'required'</span><span class="token punctuation">,</span>
+      <span class="token single-quoted-string string">'body'</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token single-quoted-string string">'required'</span><span class="token punctuation">,</span>
+    <span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  
+    Mail<span class="token punctuation">:</span><span class="token punctuation">:</span><span class="token function">to</span><span class="token punctuation">(</span><span class="token single-quoted-string string">'reciever@email.com'</span><span class="token punctuation">)</span>
+      <span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">send</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name"><span class="token punctuation">\</span>App<span class="token punctuation">\</span>Mail<span class="token punctuation">\</span>Message</span><span class="token punctuation">(</span><span class="token variable">$request</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">all</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">return</span> <span class="token function">redirect</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">route</span><span class="token punctuation">(</span><span class="token single-quoted-string string">'messages.index'</span><span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">with</span><span class="token punctuation">(</span><span class="token single-quoted-string string">'ok'</span><span class="token punctuation">,</span><span class="token single-quoted-string string">'sent !'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token comment">/**
+   * Display the specified resource.
+   *
+   * @param  \App\Models\Message $message
+   * @return \Illuminate\Http\Response
+   */</span>
+  <span class="token keyword">public</span> <span class="token keyword">function</span> <span class="token function">show</span><span class="token punctuation">(</span>Message <span class="token variable">$message</span><span class="token punctuation">)</span>
+  <span class="token punctuation">{</span>
+    <span class="token comment">//</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token comment">/**
+   * Show the form for editing the specified resource.
+   *
+   * @param  \App\Models\Message $message
+   * @return \Illuminate\Http\Response
+   */</span>
+  <span class="token keyword">public</span> <span class="token keyword">function</span> <span class="token function">edit</span><span class="token punctuation">(</span>Message <span class="token variable">$message</span><span class="token punctuation">)</span>
+  <span class="token punctuation">{</span>
+    <span class="token comment">//</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token comment">/**
+   * Update the specified resource in storage.
+   *
+   * @param  \Illuminate\Http\Request $request
+   * @param  \App\Models\Message $message
+   * @return \Illuminate\Http\Response
+   */</span>
+  <span class="token keyword">public</span> <span class="token keyword">function</span> <span class="token function">update</span><span class="token punctuation">(</span>Request <span class="token variable">$request</span><span class="token punctuation">,</span> Message <span class="token variable">$message</span><span class="token punctuation">)</span>
+  <span class="token punctuation">{</span>
+    <span class="token comment">//</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token comment">/**
+   * Remove the specified resource from storage.
+   *
+   * @param  \App\Models\Message $message
+   * @return \Illuminate\Http\Response
+   */</span>
+  <span class="token keyword">public</span> <span class="token keyword">function</span> <span class="token function">destroy</span><span class="token punctuation">(</span>Message <span class="token variable">$message</span><span class="token punctuation">)</span>
+  <span class="token punctuation">{</span>
+    <span class="token comment">//</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</span></code></pre></div><h2 id="create-views"><a href="#create-views" class="header-anchor">#</a> Create views</h2> <ol><li><code>/resources/views/forms/contact.blade.php</code></li></ol> <blockquote><p>Contact Form</p></blockquote> <div class="language-php extra-class"><pre class="language-php"><code><span class="token operator">&lt;</span><span class="token operator">!</span>doctype html<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span>html lang<span class="token operator">=</span><span class="token double-quoted-string string">&quot;en&quot;</span><span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span>head<span class="token operator">&gt;</span>
+  <span class="token operator">&lt;</span>meta charset<span class="token operator">=</span><span class="token double-quoted-string string">&quot;UTF-8&quot;</span><span class="token operator">&gt;</span>
+  <span class="token operator">&lt;</span>meta name<span class="token operator">=</span><span class="token double-quoted-string string">&quot;viewport&quot;</span>
+        content<span class="token operator">=</span><span class="token double-quoted-string string">&quot;width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0&quot;</span><span class="token operator">&gt;</span>
+  <span class="token operator">&lt;</span>meta http<span class="token operator">-</span>equiv<span class="token operator">=</span><span class="token double-quoted-string string">&quot;X-UA-Compatible&quot;</span> content<span class="token operator">=</span><span class="token double-quoted-string string">&quot;ie=edge&quot;</span><span class="token operator">&gt;</span>
+  <span class="token operator">&lt;</span>title<span class="token operator">&gt;</span>Laravel Basic Mail<span class="token operator">&lt;</span><span class="token operator">/</span>title<span class="token operator">&gt;</span>
+  <span class="token operator">&lt;</span>link href<span class="token operator">=</span><span class="token double-quoted-string string">&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css&quot;</span> rel<span class="token operator">=</span><span class="token double-quoted-string string">&quot;stylesheet&quot;</span>
+        integrity<span class="token operator">=</span><span class="token double-quoted-string string">&quot;sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We&quot;</span> crossorigin<span class="token operator">=</span><span class="token double-quoted-string string">&quot;anonymous&quot;</span><span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>head<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span>body<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span>div <span class="token keyword">class</span><span class="token operator">=</span><span class="token double-quoted-string string">&quot;container&quot;</span><span class="token operator">&gt;</span>
+  <span class="token operator">&lt;</span>div <span class="token keyword">class</span><span class="token operator">=</span><span class="token double-quoted-string string">&quot;row&quot;</span><span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span>div <span class="token keyword">class</span><span class="token operator">=</span><span class="token double-quoted-string string">&quot;col-12&quot;</span><span class="token operator">&gt;</span>
+      <span class="token operator">&lt;</span>h1 <span class="token keyword">class</span><span class="token operator">=</span><span class="token double-quoted-string string">&quot;display-4&quot;</span><span class="token operator">&gt;</span>Send <span class="token keyword">New</span> Message<span class="token operator">&lt;</span><span class="token operator">/</span>h1<span class="token operator">&gt;</span>
+      <span class="token operator">&lt;</span>hr<span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">&gt;</span>
+  <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">&gt;</span>
+
+  @<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token variable">$errors</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">any</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token operator">&lt;</span>div <span class="token keyword">class</span><span class="token operator">=</span><span class="token double-quoted-string string">&quot;row&quot;</span><span class="token operator">&gt;</span>
+      <span class="token operator">&lt;</span>div <span class="token keyword">class</span><span class="token operator">=</span><span class="token double-quoted-string string">&quot;col&quot;</span><span class="token operator">&gt;</span>
+        <span class="token operator">&lt;</span>ul<span class="token operator">&gt;</span>
+          @<span class="token keyword">foreach</span><span class="token punctuation">(</span><span class="token variable">$errors</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">all</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">as</span> <span class="token variable">$error</span><span class="token punctuation">)</span>
+            <span class="token operator">&lt;</span>li<span class="token operator">&gt;</span><span class="token punctuation">{</span><span class="token punctuation">{</span><span class="token variable">$error</span><span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token operator">&lt;</span><span class="token operator">/</span>li<span class="token operator">&gt;</span>
+          @<span class="token keyword">endforeach</span>
+        <span class="token operator">&lt;</span><span class="token operator">/</span>ul<span class="token operator">&gt;</span>
+      <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">&gt;</span>
+  @<span class="token keyword">endif</span>
+
+  @<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token variable">$message</span> <span class="token operator">=</span> Session<span class="token punctuation">:</span><span class="token punctuation">:</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token single-quoted-string string">'ok'</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token operator">&lt;</span>div <span class="token keyword">class</span><span class="token operator">=</span><span class="token double-quoted-string string">&quot;alert alert-success&quot;</span><span class="token operator">&gt;</span>
+      <span class="token operator">&lt;</span>p<span class="token operator">&gt;</span><span class="token punctuation">{</span><span class="token punctuation">{</span> <span class="token variable">$message</span> <span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token operator">&lt;</span><span class="token operator">/</span>p<span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">&gt;</span>
+  @<span class="token keyword">endif</span>
+
+  <span class="token operator">&lt;</span>div <span class="token keyword">class</span><span class="token operator">=</span><span class="token double-quoted-string string">&quot;row&quot;</span><span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span>div <span class="token keyword">class</span><span class="token operator">=</span><span class="token double-quoted-string string">&quot;col&quot;</span><span class="token operator">&gt;</span>
+      <span class="token operator">&lt;</span>form action<span class="token operator">=</span><span class="token double-quoted-string string">&quot;{{route('messages.store')}}&quot;</span> method<span class="token operator">=</span><span class="token double-quoted-string string">&quot;post&quot;</span><span class="token operator">&gt;</span>
+        @csrf
+        <span class="token operator">&lt;</span>div <span class="token keyword">class</span><span class="token operator">=</span><span class="token double-quoted-string string">&quot;mb-3&quot;</span><span class="token operator">&gt;</span>
+          <span class="token operator">&lt;</span>label <span class="token keyword">for</span><span class="token operator">=</span><span class="token double-quoted-string string">&quot;name&quot;</span> <span class="token keyword">class</span><span class="token operator">=</span><span class="token double-quoted-string string">&quot;form-label&quot;</span><span class="token operator">&gt;</span>Name<span class="token operator">&lt;</span><span class="token operator">/</span>label<span class="token operator">&gt;</span>
+          <span class="token operator">&lt;</span>input name<span class="token operator">=</span><span class="token double-quoted-string string">&quot;name&quot;</span> type<span class="token operator">=</span><span class="token double-quoted-string string">&quot;text&quot;</span> <span class="token keyword">class</span><span class="token operator">=</span><span class="token double-quoted-string string">&quot;form-control form-control-sm&quot;</span> required<span class="token operator">/</span><span class="token operator">&gt;</span>
+        <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">&gt;</span>
+        <span class="token operator">&lt;</span>div <span class="token keyword">class</span><span class="token operator">=</span><span class="token double-quoted-string string">&quot;mb-3&quot;</span><span class="token operator">&gt;</span>
+          <span class="token operator">&lt;</span>label <span class="token keyword">for</span><span class="token operator">=</span><span class="token double-quoted-string string">&quot;email&quot;</span> <span class="token keyword">class</span><span class="token operator">=</span><span class="token double-quoted-string string">&quot;form-label&quot;</span><span class="token operator">&gt;</span>Email<span class="token operator">&lt;</span><span class="token operator">/</span>label<span class="token operator">&gt;</span>
+          <span class="token operator">&lt;</span>input name<span class="token operator">=</span><span class="token double-quoted-string string">&quot;email&quot;</span> type<span class="token operator">=</span><span class="token double-quoted-string string">&quot;email&quot;</span> <span class="token keyword">class</span><span class="token operator">=</span><span class="token double-quoted-string string">&quot;form-control form-control-sm&quot;</span> required<span class="token operator">/</span><span class="token operator">&gt;</span>
+        <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">&gt;</span>
+        <span class="token operator">&lt;</span>div <span class="token keyword">class</span><span class="token operator">=</span><span class="token double-quoted-string string">&quot;mb-3&quot;</span><span class="token operator">&gt;</span>
+          <span class="token operator">&lt;</span>label <span class="token keyword">for</span><span class="token operator">=</span><span class="token double-quoted-string string">&quot;body&quot;</span> <span class="token keyword">class</span><span class="token operator">=</span><span class="token double-quoted-string string">&quot;form-label&quot;</span><span class="token operator">&gt;</span>Message<span class="token operator">&lt;</span><span class="token operator">/</span>label<span class="token operator">&gt;</span>
+          <span class="token operator">&lt;</span>textarea name<span class="token operator">=</span><span class="token double-quoted-string string">&quot;body&quot;</span> type<span class="token operator">=</span><span class="token double-quoted-string string">&quot;tel&quot;</span> <span class="token keyword">class</span><span class="token operator">=</span><span class="token double-quoted-string string">&quot;form-control form-control-sm&quot;</span> rows<span class="token operator">=</span><span class="token double-quoted-string string">&quot;4&quot;</span> required<span class="token operator">&gt;</span><span class="token operator">&lt;</span><span class="token operator">/</span>textarea<span class="token operator">&gt;</span>
+        <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">&gt;</span>
+        <span class="token operator">&lt;</span>div <span class="token keyword">class</span><span class="token operator">=</span><span class="token double-quoted-string string">&quot;mb-3&quot;</span><span class="token operator">&gt;</span>
+          <span class="token operator">&lt;</span>button type<span class="token operator">=</span><span class="token double-quoted-string string">&quot;submit&quot;</span> <span class="token keyword">class</span><span class="token operator">=</span><span class="token double-quoted-string string">&quot;btn btn-sm btn-primary&quot;</span><span class="token operator">&gt;</span>send<span class="token operator">&lt;</span><span class="token operator">/</span>button<span class="token operator">&gt;</span>
+        <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">&gt;</span>
+      <span class="token operator">&lt;</span><span class="token operator">/</span>form<span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">&gt;</span>
+  <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span>script src<span class="token operator">=</span><span class="token double-quoted-string string">&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js&quot;</span>
+        integrity<span class="token operator">=</span><span class="token double-quoted-string string">&quot;sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj&quot;</span>
+        crossorigin<span class="token operator">=</span><span class="token double-quoted-string string">&quot;anonymous&quot;</span><span class="token operator">&gt;</span><span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>body<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>html<span class="token operator">&gt;</span>
+</code></pre></div><ol start="2"><li><code>/resources/views/emails/message.blade.php</code></li></ol> <blockquote><p>Mail Body</p></blockquote> <div class="language-php extra-class"><pre class="language-php"><code><span class="token operator">&lt;</span><span class="token operator">!</span>doctype html<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span>html lang<span class="token operator">=</span><span class="token double-quoted-string string">&quot;en&quot;</span><span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span>head<span class="token operator">&gt;</span>
+  <span class="token operator">&lt;</span>meta charset<span class="token operator">=</span><span class="token double-quoted-string string">&quot;UTF-8&quot;</span><span class="token operator">&gt;</span>
+  <span class="token operator">&lt;</span>meta name<span class="token operator">=</span><span class="token double-quoted-string string">&quot;viewport&quot;</span>
+        content<span class="token operator">=</span><span class="token double-quoted-string string">&quot;width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0&quot;</span><span class="token operator">&gt;</span>
+  <span class="token operator">&lt;</span>meta http<span class="token operator">-</span>equiv<span class="token operator">=</span><span class="token double-quoted-string string">&quot;X-UA-Compatible&quot;</span> content<span class="token operator">=</span><span class="token double-quoted-string string">&quot;ie=edge&quot;</span><span class="token operator">&gt;</span>
+  <span class="token operator">&lt;</span>title<span class="token operator">&gt;</span>Message<span class="token operator">&lt;</span><span class="token operator">/</span>title<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>head<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span>body<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span>ul<span class="token operator">&gt;</span>
+  <span class="token operator">&lt;</span>li<span class="token operator">&gt;</span><span class="token operator">&lt;</span>b<span class="token operator">&gt;</span>Name<span class="token punctuation">:</span><span class="token operator">&lt;</span><span class="token operator">/</span>b<span class="token operator">&gt;</span> <span class="token punctuation">{</span><span class="token punctuation">{</span><span class="token variable">$mailData</span><span class="token punctuation">[</span><span class="token single-quoted-string string">'name'</span><span class="token punctuation">]</span><span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token operator">&lt;</span><span class="token operator">/</span>li<span class="token operator">&gt;</span>
+  <span class="token operator">&lt;</span>li<span class="token operator">&gt;</span><span class="token operator">&lt;</span>b<span class="token operator">&gt;</span>Email<span class="token punctuation">:</span><span class="token operator">&lt;</span><span class="token operator">/</span>b<span class="token operator">&gt;</span> <span class="token punctuation">{</span><span class="token punctuation">{</span><span class="token variable">$mailData</span><span class="token punctuation">[</span><span class="token single-quoted-string string">'email'</span><span class="token punctuation">]</span><span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token operator">&lt;</span><span class="token operator">/</span>li<span class="token operator">&gt;</span>
+  <span class="token operator">&lt;</span>li<span class="token operator">&gt;</span><span class="token operator">&lt;</span>b<span class="token operator">&gt;</span>Message<span class="token punctuation">:</span><span class="token operator">&lt;</span><span class="token operator">/</span>b<span class="token operator">&gt;</span> <span class="token punctuation">{</span><span class="token punctuation">{</span><span class="token variable">$mailData</span><span class="token punctuation">[</span><span class="token single-quoted-string string">'body'</span><span class="token punctuation">]</span><span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token operator">&lt;</span><span class="token operator">/</span>li<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>ul<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>body<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>html<span class="token operator">&gt;</span>
+</code></pre></div><h2 id="create-routes"><a href="#create-routes" class="header-anchor">#</a> Create routes</h2> <blockquote><p>/routes/web.php</p></blockquote> <div class="language-php extra-class"><pre class="language-php"><code><span class="token keyword">use</span> <span class="token package">App<span class="token punctuation">\</span>Http<span class="token punctuation">\</span>Controllers<span class="token punctuation">\</span>MessageController</span><span class="token punctuation">;</span>
+<span class="token comment">// {***} ///</span>
+Route<span class="token punctuation">:</span><span class="token punctuation">:</span><span class="token function">resource</span><span class="token punctuation">(</span><span class="token single-quoted-string string">'messages'</span><span class="token punctuation">,</span> MessageController<span class="token punctuation">:</span><span class="token punctuation">:</span><span class="token keyword">class</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h2 id="serve"><a href="#serve" class="header-anchor">#</a> Serve</h2> <div class="language-shell extra-class"><pre class="language-shell"><code>php artisan serve
+</code></pre></div><blockquote><p>navigate to : http://127.0.0.1:8000/messages</p></blockquote></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/tutorials/laravel_crud.html" class="prev">
+        Laravel CRUD
+      </a></span> <!----></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.5fb13467.js" defer></script><script src="/assets/js/2.63cfec30.js" defer></script><script src="/assets/js/16.bb2c7866.js" defer></script>
+  </body>
+</html>
