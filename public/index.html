@@ -1,0 +1,361 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bayram Bani — Senior Integration Engineer</title>
+  <meta name="description" content="Bayram Bani — Senior Integration Engineer with 8+ years in TIBCO BusinessWorks, EMS and OSS/BSS integration for large-scale telecom platforms. Based in Tunis, Tunisia.">
+  <meta name="theme-color" content="#0d0f12">
+  <meta property="og:title" content="Bayram Bani — Senior Integration Engineer">
+  <meta property="og:description" content="TIBCO BW · Enterprise Integration · OSS/BSS · Telecom Platforms">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%230d0f12'/><circle cx='9' cy='16' r='4' fill='%23ff6b2c'/><circle cx='23' cy='16' r='4' fill='none' stroke='%23ece6d9' stroke-width='2'/><path d='M13 16h6' stroke='%23ece6d9' stroke-width='2'/></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=IBM+Plex+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,400;1,6..72,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <a href="#top" class="mark" aria-label="Bayram Bani, home">
+      <span class="mark__dot"></span>BB<span class="mark__sep">/</span><span class="mark__role">integration</span>
+    </a>
+    <nav aria-label="Primary">
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact" class="nav__cta">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero__text">
+        <p class="eyebrow reveal" style="--d:0">
+          <span class="status"></span>Senior Integration Engineer · Tunis, Tunisia
+        </p>
+        <h1 class="reveal" style="--d:1">
+          Bayram<br><span class="hero__last">Bani</span>
+        </h1>
+        <p class="hero__lede reveal" style="--d:2">
+          I connect the systems that keep telecom networks running — <em>CRM, Billing, Charging, Provisioning</em> and the Core Network — with mission-critical integrations built on TIBCO BusinessWorks and EMS.
+        </p>
+        <div class="hero__actions reveal" style="--d:3">
+          <a class="btn btn--solid" href="#contact">Get in touch</a>
+          <a class="btn btn--ghost" href="/Bayram_Bani_Resume.pdf" download>Download résumé <span aria-hidden="true">↓</span></a>
+        </div>
+      </div>
+
+      <!-- Integration bus diagram -->
+      <figure class="bus reveal" style="--d:2" aria-label="Diagram: an enterprise service bus routing messages between CRM, POS, Billing, Charging, Provisioning and Core Network">
+        <svg viewBox="0 0 520 440" role="img" aria-hidden="true">
+          <defs>
+            <pattern id="dots" width="20" height="20" patternUnits="userSpaceOnUse">
+              <circle cx="1" cy="1" r="1" fill="rgba(236,230,217,.08)"/>
+            </pattern>
+          </defs>
+          <rect width="520" height="440" fill="url(#dots)"/>
+
+          <!-- routes -->
+          <g class="routes" fill="none">
+            <path id="r1" d="M90 70 C 90 160, 260 130, 260 220"/>
+            <path id="r2" d="M260 50 L 260 220"/>
+            <path id="r3" d="M430 70 C 430 160, 260 130, 260 220"/>
+            <path id="r4" d="M260 220 C 260 310, 90 280, 90 370"/>
+            <path id="r5" d="M260 220 L 260 390"/>
+            <path id="r6" d="M260 220 C 260 310, 430 280, 430 370"/>
+          </g>
+
+          <!-- packets -->
+          <g class="packets">
+            <circle r="4"><animateMotion dur="3.2s" repeatCount="indefinite"><mpath href="#r1"/></animateMotion></circle>
+            <circle r="4"><animateMotion dur="2.6s" begin="0.8s" repeatCount="indefinite"><mpath href="#r2"/></animateMotion></circle>
+            <circle r="4"><animateMotion dur="3.6s" begin="0.3s" repeatCount="indefinite"><mpath href="#r3"/></animateMotion></circle>
+            <circle r="4" class="alt"><animateMotion dur="3s" begin="1.4s" repeatCount="indefinite"><mpath href="#r4"/></animateMotion></circle>
+            <circle r="4" class="alt"><animateMotion dur="2.4s" begin="1s" repeatCount="indefinite"><mpath href="#r5"/></animateMotion></circle>
+            <circle r="4" class="alt"><animateMotion dur="3.4s" begin="1.9s" repeatCount="indefinite"><mpath href="#r6"/></animateMotion></circle>
+          </g>
+
+          <!-- hub -->
+          <g class="hub" transform="translate(260 220)">
+            <circle r="54" class="hub__ring"/>
+            <circle r="40" class="hub__core"/>
+            <text y="-4" text-anchor="middle" class="hub__label">TIBCO</text>
+            <text y="14" text-anchor="middle" class="hub__sub">BW · EMS</text>
+          </g>
+
+          <!-- nodes -->
+          <g class="nodes">
+            <g transform="translate(90 50)"><rect x="-44" y="-18" width="88" height="36" rx="4"/><text text-anchor="middle" y="5">CRM</text></g>
+            <g transform="translate(260 32)"><rect x="-44" y="-18" width="88" height="36" rx="4"/><text text-anchor="middle" y="5">POS · USSD</text></g>
+            <g transform="translate(430 50)"><rect x="-44" y="-18" width="88" height="36" rx="4"/><text text-anchor="middle" y="5">Digital</text></g>
+            <g transform="translate(90 390)"><rect x="-50" y="-18" width="100" height="36" rx="4"/><text text-anchor="middle" y="5">BSCS Billing</text></g>
+            <g transform="translate(260 408)"><rect x="-56" y="-18" width="112" height="36" rx="4"/><text text-anchor="middle" y="5">InstantLink</text></g>
+            <g transform="translate(430 390)"><rect x="-50" y="-18" width="100" height="36" rx="4"/><text text-anchor="middle" y="5">IN · UDM</text></g>
+          </g>
+        </svg>
+        <figcaption><span>fig. 01</span> — one bus, many systems, zero downtime.</figcaption>
+      </figure>
+    </section>
+
+    <!-- STATS -->
+    <section class="stats" aria-label="At a glance">
+      <div class="stat reveal"><span class="stat__num">8+</span><span class="stat__label">years building<br>software &amp; integrations</span></div>
+      <div class="stat reveal" style="--d:1"><span class="stat__num">5</span><span class="stat__label">major telecom<br>programs delivered</span></div>
+      <div class="stat reveal" style="--d:2"><span class="stat__num">6</span><span class="stat__label">OSS/BSS domains<br>wired together</span></div>
+      <div class="stat reveal" style="--d:3"><span class="stat__num">3</span><span class="stat__label">languages —<br>Arabic, French, English</span></div>
+    </section>
+
+    <!-- PROFILE -->
+    <section class="profile section" id="about">
+      <h2 class="section__label"><span>00</span>Profile</h2>
+      <div class="profile__body">
+        <p class="profile__big reveal">
+          Senior Telecom Integration Engineer designing, developing and supporting <mark>mission-critical enterprise integration</mark> in large-scale telecom environments.
+        </p>
+        <div class="profile__cols">
+          <p class="reveal">Specialized in <strong>TIBCO BusinessWorks</strong>, <strong>TIBCO EMS</strong>, Enterprise Application Integration (EAI) and <strong>OSS/BSS</strong> ecosystems — delivering integrations across CRM, Billing (Ericsson BSCS), Charging Systems, Provisioning (Nokia InstantLink) and Core Network platforms.</p>
+          <p class="reveal" style="--d:1">Proven experience leading complex migration programs, optimizing production integrations, troubleshooting high-volume distributed systems, and delivering scalable, highly available integration services in Agile teams.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="section" id="experience">
+      <h2 class="section__label"><span>01</span>Experience</h2>
+      <ol class="timeline">
+        <li class="job reveal">
+          <div class="job__meta">
+            <time>12/2025 — Present</time>
+            <span>Tunis</span>
+          </div>
+          <div class="job__body">
+            <h3>Senior Integration Engineer</h3>
+            <p class="job__org">Diyar United Company</p>
+            <ul>
+              <li>Design, develop and maintain enterprise integration services using TIBCO BusinessWorks, TIBCO EMS and TIBCO Administrator.</li>
+              <li>Build integration workflows connecting CRM, POS, Billing (BSCS), Charging (IN), Provisioning (InstantLink) and Core Network platforms.</li>
+              <li>Diagnose and resolve complex production incidents across distributed OSS/BSS environments.</li>
+              <li>Optimize integration performance, reducing latency and improving service availability.</li>
+              <li>Participate in solution design, effort estimation, release planning and deployment.</li>
+            </ul>
+            <p class="tags"><span>TIBCO BW</span><span>EMS</span><span>Administrator</span><span>OSS/BSS</span></p>
+          </div>
+        </li>
+
+        <li class="job reveal">
+          <div class="job__meta">
+            <time>08/2022 — 11/2025</time>
+            <span>Tunis, Tunisia</span>
+          </div>
+          <div class="job__body">
+            <h3>BSS Integration Engineer</h3>
+            <p class="job__org">Ooredoo Tunisia</p>
+            <ul>
+              <li>Designed and implemented enterprise integrations using TIBCO BusinessWorks and TIBCO EMS.</li>
+              <li>Developed RESTful and SOAP services connecting CRM, Billing, Charging, Provisioning and Digital Channels.</li>
+              <li>Delivered production-ready services with high availability and low defect rates.</li>
+              <li>Supported mission-critical telecom applications through root cause analysis and production troubleshooting.</li>
+              <li>Took part in strategic migrations involving Ericsson BSCS, Huawei UDM and Nokia InstantLink.</li>
+            </ul>
+            <p class="tags"><span>REST</span><span>SOAP</span><span>Ericsson BSCS</span><span>Huawei UDM</span><span>InstantLink</span></p>
+          </div>
+        </li>
+
+        <li class="job reveal">
+          <div class="job__meta">
+            <time>07/2022 — 07/2023</time>
+            <span>Nabeul · Remote</span>
+          </div>
+          <div class="job__body">
+            <h3>Full Stack Developer</h3>
+            <p class="job__org">Code Temple</p>
+            <ul>
+              <li>Designed and developed cross-platform mobile applications using Flutter &amp; Firebase.</li>
+              <li>Delivered multiple applications for SMEs with a focus on usability, performance and clean architecture.</li>
+              <li>Contributed to requirements gathering, UI/UX improvements and deployment pipelines.</li>
+            </ul>
+            <p class="tags"><span>Flutter</span><span>Firebase</span></p>
+          </div>
+        </li>
+
+        <li class="job reveal">
+          <div class="job__meta">
+            <time>06/2018 — 07/2022</time>
+            <span>Nabeul, Tunisia</span>
+          </div>
+          <div class="job__body">
+            <h3>Full Stack Developer</h3>
+            <p class="job__org">Universal Web Soft</p>
+            <ul>
+              <li>Developed web apps, ERP modules and mobile applications for clients across various industries.</li>
+              <li>Designed maintainable architectures using UML / Merise and improved system performance.</li>
+            </ul>
+            <p class="tags"><span>.NET</span><span>C#</span><span>PHP / Laravel</span><span>Android</span><span>Flutter</span><span>MySQL</span><span>MS SQL Server</span></p>
+          </div>
+        </li>
+
+        <li class="job job--compact reveal">
+          <div class="job__meta">
+            <time>02/2018 — 05/2018</time>
+            <span>Hammamet, Tunisia</span>
+          </div>
+          <div class="job__body">
+            <h3>Web Developer</h3>
+            <p class="job__org">Manarate Research and Development</p>
+            <ul>
+              <li>Built websites and lightweight web apps with WordPress, PrestaShop, PHP and MySQL; improved performance and SEO structure.</li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="job job--compact reveal">
+          <div class="job__meta">
+            <time>2013 · 2016</time>
+            <span>Tunis · Nabeul</span>
+          </div>
+          <div class="job__body">
+            <h3>Internships</h3>
+            <p class="job__org">Innovasia · STUSID Bank</p>
+            <ul>
+              <li><strong>Innovasia (2016)</strong> — Designed and built an E-Learning platform (PHP, Ajax, Materialize, MySQL) and configured an OpenStack environment.</li>
+              <li><strong>STUSID Bank (2013)</strong> — Developed a bank card fraud prediction system using pattern analysis; contributed to data modeling and interface design.</li>
+            </ul>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section section--dark" id="projects">
+      <h2 class="section__label"><span>02</span>Selected projects</h2>
+      <div class="projects">
+        <article class="project project--wide reveal">
+          <p class="project__route"><span>BSCS R3</span><i></i><span>EB26</span></p>
+          <h3>Ericsson BSCS R3 → EB26 Migration</h3>
+          <p>Designed and implemented ESB integrations supporting the migration from Ericsson BSCS R3 to Ericsson Billing EB26, with TIBCO BW workflows and EMS messaging that kept service disruption to a minimum.</p>
+        </article>
+        <article class="project reveal" style="--d:1">
+          <p class="project__route"><span>Manual</span><i></i><span>Zero-touch</span></p>
+          <h3>FTTH Auto-Provisioning</h3>
+          <p>Automated FTTH provisioning with Nokia InstantLink and ZTE ZenicOne — enabling automatic ONU configuration and activation and eliminating manual tasks.</p>
+        </article>
+        <article class="project reveal">
+          <p class="project__route"><span>Legacy</span><i></i><span>Mobilytix</span></p>
+          <h3>Loyalty Platform Migration</h3>
+          <p>Designed, developed and deployed TIBCO BW5 integration services for the move to the Comviva Mobilytix Rewards platform, seamlessly linked to existing OSS/BSS systems.</p>
+        </article>
+        <article class="project reveal" style="--d:1">
+          <p class="project__route"><span>Nokia HLR</span><i></i><span>Huawei UDM</span></p>
+          <h3>Core Network Migration</h3>
+          <p>Redesigned ESB integrations and provisioning interfaces for the migration from Nokia HLR to Huawei UDM, ensuring full service continuity.</p>
+        </article>
+        <article class="project reveal" style="--d:2">
+          <p class="project__route"><span>ACS</span><i></i><span>AXESS</span></p>
+          <h3>AXESS ACS Migration</h3>
+          <p>Built integration services for the AXESS ACS migration, developing Java/SOAP connectors and configuring provisioning logic in Nokia InstantLink.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section" id="skills">
+      <h2 class="section__label"><span>03</span>Skills</h2>
+      <div class="skills">
+        <div class="skillgroup reveal">
+          <h3>Enterprise Integration</h3>
+          <ul><li>TIBCO BusinessWorks</li><li>TIBCO EMS</li><li>TIBCO Administrator</li><li>EAI</li><li>SOA</li><li>REST APIs</li><li>SOAP Web Services</li><li>XML / XSD / XSLT</li><li>JMS</li></ul>
+        </div>
+        <div class="skillgroup reveal" style="--d:1">
+          <h3>Telecom OSS/BSS</h3>
+          <ul><li>CRM</li><li>POS</li><li>USSD &amp; App channels</li><li>Billing — BSCS</li><li>Charging — IN</li><li>Nokia InstantLink</li><li>HLR / UDM</li><li>ACS</li><li>OLT</li></ul>
+        </div>
+        <div class="skillgroup reveal" style="--d:2">
+          <h3>Software Development</h3>
+          <ul><li>Java</li><li>C#</li><li>ASP .NET</li><li>PHP</li><li>Firebase</li><li>Flutter</li><li>Android</li><li>React.js</li><li>Microservices</li><li>MVC</li><li>Bootstrap</li><li>Material Design</li></ul>
+        </div>
+        <div class="skillgroup reveal">
+          <h3>Databases</h3>
+          <ul><li>MySQL</li><li>MS SQL Server</li><li>Oracle PL/SQL</li><li>SQLite</li></ul>
+        </div>
+        <div class="skillgroup reveal" style="--d:1">
+          <h3>System &amp; Cloud</h3>
+          <ul><li>Linux — RHEL, Ubuntu</li><li>Windows Server</li><li>Docker</li><li>OpenStack</li></ul>
+        </div>
+        <div class="skillgroup reveal" style="--d:2">
+          <h3>Tools</h3>
+          <ul><li>Git</li><li>Jira</li><li>UML</li><li>Merise</li></ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION / LANGUAGES / MORE -->
+    <section class="section" id="education">
+      <h2 class="section__label"><span>04</span>Education &amp; more</h2>
+      <div class="edu">
+        <div class="edu__col reveal">
+          <h3 class="minihead">Education</h3>
+          <div class="degree">
+            <time>2014 — 2016</time>
+            <h4>Master's degree, Computer Science &amp; Computer Networks</h4>
+            <p>Leaders University · Nabeul</p>
+          </div>
+          <div class="degree">
+            <time>2011 — 2013</time>
+            <h4>Bachelor's degree, Computer Science</h4>
+            <p>Faculty of Sciences of Tunis · Tunis</p>
+          </div>
+        </div>
+
+        <div class="edu__col reveal" style="--d:1">
+          <h3 class="minihead">Languages</h3>
+          <ul class="langs">
+            <li><span>Arabic</span><span class="meter" style="--v:5" aria-label="5 out of 5"></span></li>
+            <li><span>French</span><span class="meter" style="--v:3" aria-label="3 out of 5"></span></li>
+            <li><span>English</span><span class="meter" style="--v:3" aria-label="3 out of 5"></span></li>
+          </ul>
+
+          <h3 class="minihead">Training</h3>
+          <ul class="plain">
+            <li><strong>CCNA 1 &amp; CCNA 2</strong> — Leaders University</li>
+            <li><strong>Android Training</strong> — Orange Developer Center</li>
+          </ul>
+        </div>
+
+        <div class="edu__col reveal" style="--d:2">
+          <h3 class="minihead">Civic engagement</h3>
+          <p class="civic__org">The Independent High Authority for Elections (ISIE)</p>
+          <p class="civic__role">Head / Deputy Head / Member of Polling Station</p>
+          <ul class="plain">
+            <li>Legislative &amp; Presidential Elections — 2014, 2019</li>
+            <li>Municipal Elections — 2018</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+      <p class="eyebrow">Open to integration &amp; telecom engagements</p>
+      <h2 class="contact__title reveal">Let's connect<br><span>your systems.</span></h2>
+      <ul class="contact__links reveal" style="--d:1">
+        <li><a href="mailto:bayram.bani@outlook.com"><span class="k">email</span><span class="v">bayram.bani@outlook.com</span></a></li>
+        <li><a href="tel:+21622124884"><span class="k">phone</span><span class="v">+216 22 124 884</span></a></li>
+        <li><a href="https://www.linkedin.com/in/bayram-bani" target="_blank" rel="noopener"><span class="k">linkedin</span><span class="v">bayram-bani ↗</span></a></li>
+        <li><a href="https://github.com/BayramBani" target="_blank" rel="noopener"><span class="k">github</span><span class="v">BayramBani ↗</span></a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>© <span id="year">2026</span> Bayram Bani</span>
+    <span>Tunis, Tunisia</span>
+    <a href="/Bayram_Bani_Resume.pdf" download>Résumé (PDF)</a>
+  </footer>
+
+  <script src="/main.js" defer></script>
+</body>
+</html>
