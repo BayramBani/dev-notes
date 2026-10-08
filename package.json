@@ -1,19 +1,14 @@
 {
-  "name": "docs-starter",
-  "version": "0.0.1",
-  "description": "",
-  "main": "index.js",
-  "authors": {
-    "name": "Bayram",
-    "email": "bayram.bani@gmail.com"
-  },
-  "repository": "https://github.com/BayramBani/docs-starter.git/docs-starter",
-  "scripts": {
-    "dev": "vuepress dev src",
-    "build": "vuepress build src"
+  "name": "bayram-bani-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Portfolio of Bayram Bani — Senior Integration Engineer (TIBCO BW, OSS/BSS, Telecom)",
+  "author": {
+    "name": "Bayram Bani",
+    "email": "bayram.bani@outlook.com"
   },
   "license": "MIT",
-  "devDependencies": {
-    "vuepress": "^1.5.3"
+  "engines": {
+    "node": ">=22"
   }
 }
